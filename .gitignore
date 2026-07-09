@@ -1,0 +1,17 @@
+# C++ build outputs
+*.exe
+*.out
+*.o
+*.obj
+
+# IDE
+.vs/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Claude
+.claude/
