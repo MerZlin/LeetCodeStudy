@@ -32,8 +32,9 @@ public:
             return list1;
 
         // 过程
-        while (list1 || list2)
+        while (list1 || list2) // 当两个链表都为空时结束循环
         {
+            // 记录当前两个节点的值；对空指针获取值可能违法，所以记录
             num1 = -111, num2 = -111;
             if (list1)
                 num1 = list1->val;
@@ -48,7 +49,7 @@ public:
                     list1 = list1->next;
                 }
                 else
-                {
+                { // 选list2
                     cur = cur->next = new ListNode(num2);
                     list2 = list2->next;
                 }
